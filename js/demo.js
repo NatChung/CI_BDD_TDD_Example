@@ -23,7 +23,6 @@ export default class demo extends Component {
   }
 
   getResult = () => {
-
     this.setState({
       resultValue: parseInt(this.state.leftValue) + parseInt(this.state.rightValue)
     })
@@ -61,12 +60,8 @@ export default class demo extends Component {
         <Text testID='result_text' style={styles.resultText}>{this.state.resultValue}</Text>
 
       </View>
-
     )
-
   }
-
-
 }
 
 const styles = StyleSheet.create({

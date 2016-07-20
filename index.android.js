@@ -10,10 +10,8 @@
  import Demo from './js/demo'
  import { AppRegistry} from 'react-native'
 
- class ci_react_native_test extends Component {
-   render() {
-     return <Demo/>
-   }
+ class CI_BDD_TDD_Example extends Component {
+   render() { return <Demo/> }
  }
 
- AppRegistry.registerComponent('ci_react_native_test', () => ci_react_native_test);
+ AppRegistry.registerComponent('CI_BDD_TDD_Example', () => CI_BDD_TDD_Example);
