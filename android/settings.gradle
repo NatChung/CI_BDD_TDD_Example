@@ -1,0 +1,3 @@
+rootProject.name = 'CI_BDD_TDD_Example'
+
+include ':app'
