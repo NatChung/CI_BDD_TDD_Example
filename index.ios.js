@@ -4,50 +4,16 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+ 'use strict';
 
-class CI_BDD_TDD_Example extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
-    );
-  }
-}
+ import React, { Component } from 'react'
+ import Demo from './js/demo'
+ import { AppRegistry} from 'react-native'
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+ class ci_react_native_test extends Component {
+   render() {
+     return <Demo/>
+   }
+ }
 
-AppRegistry.registerComponent('CI_BDD_TDD_Example', () => CI_BDD_TDD_Example);
+ AppRegistry.registerComponent('ci_react_native_test', () => ci_react_native_test);
